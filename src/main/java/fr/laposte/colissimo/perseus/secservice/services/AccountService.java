@@ -7,8 +7,8 @@ import fr.laposte.colissimo.perseus.secservice.entities.AppUser;
 
 public interface AccountService {
 	AppUser addnewUser(AppUser appUser);
-	AppUser addnewRole(AppRole appRole);
+	AppRole addnewRole(AppRole appRole);
 	void addRoleToUser(String username ,String roleName);
-	AppUser loadByusername(String username);
+	AppUser loadByUsername(String username);
 	List<AppUser> listUsers();
 }
